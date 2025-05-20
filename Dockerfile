@@ -23,7 +23,7 @@ ENV N8N_BASIC_AUTH_PASSWORD=$PASSWORD
 
 ENV ENABLE_ALPINE_PRIVATE_NETWORKING=true
 
-# RUN cd ~/.n8n/ && mkdir nodes && cd nodes && npm install @telepilotco/n8n-nodes-telepilot
+RUN cd ~/.n8n/ && mkdir nodes && cd nodes && npm install @telepilotco/n8n-nodes-telepilot
 # RUN chown node:node /home/node/.n8n
 # USER node
 
