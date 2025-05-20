@@ -29,6 +29,6 @@ ENV ENABLE_ALPINE_PRIVATE_NETWORKING=true
 
 RUN cd ~/.n8n/ && mkdir nodes && cd nodes && npm install @telepilotco/n8n-nodes-telepilot
 RUN ls -la ~/.n8n/nodes/
-ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
+# ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
 
 # CMD ["n8n", "start"]
