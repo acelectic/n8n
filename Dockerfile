@@ -25,7 +25,7 @@ ENV ENABLE_ALPINE_PRIVATE_NETWORKING=true
 
 
 RUN cd ~/.n8n/ && mkdir nodes && cd nodes && npm install @telepilotco/n8n-nodes-telepilot
-RUN chown node:node /home/node/.n8n
-USER node
+# RUN chown node:node /home/node/.n8n
+# USER node
 
 # CMD ["n8n", "start"]
